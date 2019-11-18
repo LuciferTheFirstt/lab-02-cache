@@ -13,8 +13,6 @@ install:
   - cmake .
   - cmake --build ./
 
-script:
-  - ctest -V
 
 addons:
   apt:
