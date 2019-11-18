@@ -9,49 +9,49 @@ class Cache
 {
 public:
 
-header.hpp Cache(int min_kb, int max_kb)
-header.hpp {
-header.hpp header.hpp size = log2(max_kb / min_kb) + 3;
-header.hpp header.hpp mas_sizes = new int[size];
-header.hpp header.hpp int n = 0;
-header.hpp header.hpp min_kb /= 2;
+	Cache(int min_kb, int max_kb)
+	{
+		size = log2(max_kb / min_kb) + 3;
+		mas_sizes = new int[size];
+		int n = 0;
+		min_kb /= 2;
 
-header.hpp header.hpp while (min_kb <= max_kb * 3 / 2)
-header.hpp header.hpp {
-header.hpp header.hpp header.hpp mas_sizes[n++] = min_kb;
-header.hpp header.hpp header.hpp min_kb *= 2;
-header.hpp header.hpp }
+		while (min_kb <= max_kb * 3 / 2)
+		{
+			mas_sizes[n++] = min_kb;
+			min_kb *= 2;
+		}
 
-header.hpp header.hpp mas_sizes[n++] = max_kb * 3 / 2;
-header.hpp header.hpp buffer = nullptr;
-header.hpp header.hpp std::cout << std::endl << "Massiv sizes: ";
-header.hpp header.hpp for (unsigned int i = 0; i < n; i++)
-header.hpp header.hpp header.hpp std::cout << mas_sizes[i] << " ";
-header.hpp header.hpp std::cout << std::endl;
+		mas_sizes[n++] = max_kb * 3 / 2;
+		buffer = nullptr;
+		std::cout << std::endl << "Massiv sizes: ";
+		for (unsigned int i = 0; i < n; i++)
+			std::cout << mas_sizes[i] << " ";
+		std::cout << std::endl;
 
-header.hpp }
+	}
 
-header.hpp struct Experiment
-header.hpp {
-header.hpp header.hpp int id;
-header.hpp header.hpp std::string name;
-header.hpp header.hpp double time;
-header.hpp };
+	struct Experiment
+	{
+		int id;
+		std::string name;
+		double time;
+	};
 
-header.hpp Experiment* MakeTest(std::string travel);
+	Experiment* MakeTest(std::string travel);
 
 private:
-header.hpp int LOOP = 1000;
-header.hpp unsigned int* buffer;
+	int LOOP = 1000;
+	unsigned int* buffer;
 
-header.hpp int* mas_sizes;//массив размеров(память) 
-header.hpp int size;// элементов в массиве для iго веса
+	int* mas_sizes;//массив размеров(память) 
+	int size;// элементов в массиве для iго веса
 
-header.hpp void initbuffer(int n);//заполняем буфер
-header.hpp void DirectWay(int n);//прямой путь
-header.hpp void ReversWay(int n);//обратный путь
-header.hpp void RandomWay(int n);//рандомный проход
+	void initbuffer(int n);//заполняем буфер
+	void DirectWay(int n);//прямой путь
+	void ReversWay(int n);//обратный путь
+	void RandomWay(int n);//рандомный проход
 
-header.hpp int KBtoSize(int kb);
+	int KBtoSize(int kb);
 
 };
