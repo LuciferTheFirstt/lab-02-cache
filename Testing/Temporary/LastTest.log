@@ -1,0 +1,19 @@
+Start testing: Nov 18 16:56 MSK
+----------------------------------------------------------
+Unable to find executable: /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/tests
+1/1 Testing: CH
+1/1 Test: CH
+Command: ""
+Directory: /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02
+"CH" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CH" end time: Nov 18 16:56 MSK
+"CH" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 16:56 MSK
