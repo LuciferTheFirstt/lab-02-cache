@@ -109,7 +109,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CN
+CMAKE_PROJECT_NAME:STATIC=CH
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -165,6 +165,9 @@ CN_BINARY_DIR:STATIC=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace
 
 //Value Computed by CMake
 CN_SOURCE_DIR:STATIC=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02
+
+//Dependencies for target
+Lib_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 include_LIB_DEPENDS:STATIC=

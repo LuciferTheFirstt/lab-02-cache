@@ -13,18 +13,11 @@ include_directories(include)
 
 enable_testing()
 
-add_library(include STATIC include/Source.cpp)
+add_library(Lib STATIC include/Source.cpp)
 
-add_executable(test main.cpp)
+add_executable(tests main.cpp)
 
-target_link_libraries(test include)
+target_link_libraries(tests Lib)
 
-add_test(NAME ${PROJECT_NAME} COMMAND test)
+add_test(NAME ${PROJECT_NAME} COMMAND tests)
 
-project(CN CXX)
-
-add_executable(main main.cpp)
-
-target_link_libraries(main include)
-
-add_test(NAME ${PROJECT_NAME} COMMAND main)

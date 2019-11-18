@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/progress.marks
@@ -111,43 +122,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named Lib
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Lib
+.PHONY : Lib
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+Lib/fast:
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/build
+.PHONY : Lib/fast
 
 #=============================================================================
-# Target rules for targets named include
+# Target rules for targets named tests
 
 # Build rule for target.
-include: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 include
-.PHONY : include
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-include/fast:
-	$(MAKE) -f CMakeFiles/include.dir/build.make CMakeFiles/include.dir/build
-.PHONY : include/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 include/Source.o: include/Source.cpp.o
 
@@ -155,7 +153,7 @@ include/Source.o: include/Source.cpp.o
 
 # target to build an object file
 include/Source.cpp.o:
-	$(MAKE) -f CMakeFiles/include.dir/build.make CMakeFiles/include.dir/include/Source.cpp.o
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.o
 .PHONY : include/Source.cpp.o
 
 include/Source.i: include/Source.cpp.i
@@ -164,7 +162,7 @@ include/Source.i: include/Source.cpp.i
 
 # target to preprocess a source file
 include/Source.cpp.i:
-	$(MAKE) -f CMakeFiles/include.dir/build.make CMakeFiles/include.dir/include/Source.cpp.i
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.i
 .PHONY : include/Source.cpp.i
 
 include/Source.s: include/Source.cpp.s
@@ -173,7 +171,7 @@ include/Source.s: include/Source.cpp.s
 
 # target to generate assembly for a file
 include/Source.cpp.s:
-	$(MAKE) -f CMakeFiles/include.dir/build.make CMakeFiles/include.dir/include/Source.cpp.s
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.s
 .PHONY : include/Source.cpp.s
 
 main.o: main.cpp.o
@@ -182,8 +180,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,8 +189,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -202,8 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -214,9 +209,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
-	@echo "... include"
 	@echo "... test"
+	@echo "... Lib"
+	@echo "... tests"
 	@echo "... include/Source.o"
 	@echo "... include/Source.i"
 	@echo "... include/Source.s"
