@@ -21,10 +21,3 @@ target_link_libraries(test include)
 
 add_test(NAME ${PROJECT_NAME} COMMAND test)
 
-project(CN CXX)
-
-add_executable(main main.cpp)
-
-target_link_libraries(main include)
-
-add_test(NAME ${PROJECT_NAME} COMMAND main)
