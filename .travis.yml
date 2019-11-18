@@ -3,35 +3,23 @@ sudo: false
 language: cpp
 
 compiler:
-
--gcc
+  -gcc
 
 before_install:
-
-- pip install —user cpp-coveralls
-
+  - pip install --user cpp-coveralls
+  
 install:
-
-- export CXX="g++-8" CC="gcc-8"
-
-- cmake -H. -B_build
-
-- cmake —build _build
+  - export CXX="g++-8" CC="gcc-8"
+  - cmake -H. -B_build
+  - cmake --build _build
 
 script:
-
-- ctest -V
+  - ctest -V
 
 addons:
-
-apt:
-
-sources:
-
-- ubuntu-toolchain-r-test
-
-packages:
-
-- gcc-8
-
-- g++-8
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-8
+    - g++-8
