@@ -15,9 +15,11 @@ enable_testing()
 
 add_library(Lib STATIC include/Source.cpp)
 
-add_executable(tests main.cpp)
+add_executable(tests_Cache main.cpp)
 
-target_link_libraries(tests Lib)
+target_link_libraries(tests_Cache Lib)
 
-add_test(NAME ${PROJECT_NAME} COMMAND tests)
+#add_executable(tests include/Source.cpp)
+
+add_test(NAME ${PROJECT_NAME} COMMAND tests_Cache)
 
