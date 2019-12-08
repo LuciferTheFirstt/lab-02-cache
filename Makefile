@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named Lib
 
 # Build rule for target.
@@ -153,6 +166,7 @@ include/Source.o: include/Source.cpp.o
 
 # target to build an object file
 include/Source.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.o
 	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.o
 .PHONY : include/Source.cpp.o
 
@@ -162,6 +176,7 @@ include/Source.i: include/Source.cpp.i
 
 # target to preprocess a source file
 include/Source.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.i
 	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.i
 .PHONY : include/Source.cpp.i
 
@@ -171,6 +186,7 @@ include/Source.s: include/Source.cpp.s
 
 # target to generate assembly for a file
 include/Source.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.s
 	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.s
 .PHONY : include/Source.cpp.s
 
@@ -210,6 +226,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... tests"
 	@echo "... Lib"
 	@echo "... tests_Cache"
 	@echo "... include/Source.o"

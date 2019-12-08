@@ -1,19 +1,127 @@
-Start testing: Nov 18 16:56 MSK
+Start testing: Dec 09 00:56 MSK
 ----------------------------------------------------------
-Unable to find executable: /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/tests
 1/1 Testing: CH
 1/1 Test: CH
-Command: ""
+Command: "/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/tests_Cache"
 Directory: /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02
-"CH" start time: 
+"CH" start time: Dec 09 00:56 MSK
 Output:
 ----------------------------------------------------------
+
+Massiv sizes: 64 128 256 512 1024 2048 4096 8192 9216 
+investigation:
+   travel variant: direct
+   experiments:
+   - experiment:
+       number: 1
+       input data:
+         buffer size: 64KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 2
+       input data:
+         buffer size: 128KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 3
+       input data:
+         buffer size: 256KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 4
+       input data:
+         buffer size: 512KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 5
+       input data:
+         buffer size: 1024KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 6
+       input data:
+         buffer size: 2048KB
+       results:
+         duration: 1ms
+   - experiment:
+       number: 7
+       input data:
+         buffer size: 4096KB
+       results:
+         duration: 2ms
+   - experiment:
+       number: 8
+       input data:
+         buffer size: 8192KB
+       results:
+         duration: 4ms
+
+investigation:
+   travel variant: reverse
+   experiments:
+   - experiment:
+       number: 1
+       input data:
+         buffer size: 64KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 2
+       input data:
+         buffer size: 128KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 3
+       input data:
+         buffer size: 256KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 4
+       input data:
+         buffer size: 512KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 5
+       input data:
+         buffer size: 1024KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 6
+       input data:
+         buffer size: 2048KB
+       results:
+         duration: 0ms
+   - experiment:
+       number: 7
+       input data:
+         buffer size: 4096KB
+       results:
+         duration: 2ms
+   - experiment:
+       number: 8
+       input data:
+         buffer size: 8192KB
+       results:
+         duration: 3ms
+
+investigation:
+   travel variant: random
+   experiments:
 <end of output>
-Test time =   0.00 sec
+Test time =  17.15 sec
 ----------------------------------------------------------
-Test Passed.
-"CH" end time: Nov 18 16:56 MSK
-"CH" time elapsed: 00:00:00
+Test Failed.
+"CH" end time: Dec 09 00:56 MSK
+"CH" time elapsed: 00:00:17
 ----------------------------------------------------------
 
-End testing: Nov 18 16:56 MSK
+End testing: Dec 09 00:56 MSK

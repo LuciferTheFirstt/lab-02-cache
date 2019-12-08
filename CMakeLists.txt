@@ -19,7 +19,7 @@ add_executable(tests_Cache main.cpp)
 
 target_link_libraries(tests_Cache Lib)
 
-#add_executable(tests include/Source.cpp)
+add_executable(tests include/Source.cpp)
 
 add_test(NAME ${PROJECT_NAME} COMMAND tests_Cache)
 
