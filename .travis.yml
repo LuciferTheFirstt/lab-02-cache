@@ -13,8 +13,8 @@ install:
   - cmake -H. -B_build
   - cmake --build _build
 
-#script:
-#  - ctest -V
+script:
+  - ctest -V
 
 addons:
   apt:
