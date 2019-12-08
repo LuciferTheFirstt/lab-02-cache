@@ -1,10 +1,10 @@
-Start testing: Dec 09 00:56 MSK
+Start testing: Dec 09 01:04 MSK
 ----------------------------------------------------------
 1/1 Testing: CH
 1/1 Test: CH
 Command: "/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/tests_Cache"
 Directory: /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02
-"CH" start time: Dec 09 00:56 MSK
+"CH" start time: Dec 09 01:04 MSK
 Output:
 ----------------------------------------------------------
 
@@ -111,17 +111,17 @@ investigation:
        input data:
          buffer size: 8192KB
        results:
-         duration: 3ms
+         duration: 4ms
 
 investigation:
    travel variant: random
    experiments:
 <end of output>
-Test time =  17.15 sec
+Test time =  18.06 sec
 ----------------------------------------------------------
 Test Failed.
-"CH" end time: Dec 09 00:56 MSK
-"CH" time elapsed: 00:00:17
+"CH" end time: Dec 09 01:04 MSK
+"CH" time elapsed: 00:00:18
 ----------------------------------------------------------
 
-End testing: Dec 09 00:56 MSK
+End testing: Dec 09 01:04 MSK
