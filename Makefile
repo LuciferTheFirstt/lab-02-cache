@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,6 +77,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,19 +122,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tests
-
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-#=============================================================================
 # Target rules for targets named Lib
 
 # Build rule for target.
@@ -148,47 +135,17 @@ Lib/fast:
 .PHONY : Lib/fast
 
 #=============================================================================
-# Target rules for targets named tests_Cache
+# Target rules for targets named test_cache
 
 # Build rule for target.
-tests_Cache: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests_Cache
-.PHONY : tests_Cache
+test_cache: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cache
+.PHONY : test_cache
 
 # fast build rule for target.
-tests_Cache/fast:
-	$(MAKE) -f CMakeFiles/tests_Cache.dir/build.make CMakeFiles/tests_Cache.dir/build
-.PHONY : tests_Cache/fast
-
-include/Source.o: include/Source.cpp.o
-
-.PHONY : include/Source.o
-
-# target to build an object file
-include/Source.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.o
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.o
-.PHONY : include/Source.cpp.o
-
-include/Source.i: include/Source.cpp.i
-
-.PHONY : include/Source.i
-
-# target to preprocess a source file
-include/Source.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.i
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.i
-.PHONY : include/Source.cpp.i
-
-include/Source.s: include/Source.cpp.s
-
-.PHONY : include/Source.s
-
-# target to generate assembly for a file
-include/Source.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/include/Source.cpp.s
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.s
-.PHONY : include/Source.cpp.s
+test_cache/fast:
+	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/build
+.PHONY : test_cache/fast
 
 main.o: main.cpp.o
 
@@ -196,7 +153,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/tests_Cache.dir/build.make CMakeFiles/tests_Cache.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -205,7 +162,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/tests_Cache.dir/build.make CMakeFiles/tests_Cache.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -214,8 +171,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/tests_Cache.dir/build.make CMakeFiles/tests_Cache.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+sources/Source.o: sources/Source.cpp.o
+
+.PHONY : sources/Source.o
+
+# target to build an object file
+sources/Source.cpp.o:
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.o
+.PHONY : sources/Source.cpp.o
+
+sources/Source.i: sources/Source.cpp.i
+
+.PHONY : sources/Source.i
+
+# target to preprocess a source file
+sources/Source.cpp.i:
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.i
+.PHONY : sources/Source.cpp.i
+
+sources/Source.s: sources/Source.cpp.s
+
+.PHONY : sources/Source.s
+
+# target to generate assembly for a file
+sources/Source.cpp.s:
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.s
+.PHONY : sources/Source.cpp.s
 
 # Help Target
 help:
@@ -224,17 +208,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... tests"
 	@echo "... Lib"
-	@echo "... tests_Cache"
-	@echo "... include/Source.o"
-	@echo "... include/Source.i"
-	@echo "... include/Source.s"
+	@echo "... edit_cache"
+	@echo "... test_cache"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/Source.o"
+	@echo "... sources/Source.i"
+	@echo "... sources/Source.s"
 .PHONY : help
 
 

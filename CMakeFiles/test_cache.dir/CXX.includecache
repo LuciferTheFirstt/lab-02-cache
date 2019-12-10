@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp
 Header.h
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Header.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/Header.h
 
 include/Header.h
 iostream

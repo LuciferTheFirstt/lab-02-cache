@@ -1,2 +1,2 @@
-/usr/bin/ar qc libLib.a  CMakeFiles/Lib.dir/include/Source.cpp.o
+/usr/bin/ar qc libLib.a  CMakeFiles/Lib.dir/sources/Source.cpp.o
 /usr/bin/ranlib libLib.a

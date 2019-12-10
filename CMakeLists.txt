@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.4)
 
 project(CH CXX)
 
@@ -15,11 +15,9 @@ enable_testing()
 
 add_library(Lib STATIC sources/Source.cpp)
 
-add_executable(tests_Cache main.cpp)
+add_executable(test_cache main.cpp)
 
-target_link_libraries(tests_Cache Lib)
-
-add_executable(tests sources/Source.cpp)
+target_link_libraries(test_cache Lib)
 
 add_test(NAME ${PROJECT_NAME} COMMAND tests_Cache)
 

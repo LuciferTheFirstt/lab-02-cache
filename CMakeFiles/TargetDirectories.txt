@@ -1,6 +1,5 @@
 /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/rebuild_cache.dir
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/edit_cache.dir
 /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/test.dir
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/tests.dir
 /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/Lib.dir
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/tests_Cache.dir
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/edit_cache.dir
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles/test_cache.dir

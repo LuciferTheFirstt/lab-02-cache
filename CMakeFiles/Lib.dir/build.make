@@ -57,38 +57,38 @@ include CMakeFiles/Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Lib.dir/flags.make
 
-CMakeFiles/Lib.dir/include/Source.cpp.o: CMakeFiles/Lib.dir/flags.make
-CMakeFiles/Lib.dir/include/Source.cpp.o: include/Source.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lib.dir/include/Source.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/include/Source.cpp.o -c /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Source.cpp
+CMakeFiles/Lib.dir/sources/Source.cpp.o: CMakeFiles/Lib.dir/flags.make
+CMakeFiles/Lib.dir/sources/Source.cpp.o: sources/Source.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lib.dir/sources/Source.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/sources/Source.cpp.o -c /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp
 
-CMakeFiles/Lib.dir/include/Source.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/include/Source.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Source.cpp > CMakeFiles/Lib.dir/include/Source.cpp.i
+CMakeFiles/Lib.dir/sources/Source.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/sources/Source.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp > CMakeFiles/Lib.dir/sources/Source.cpp.i
 
-CMakeFiles/Lib.dir/include/Source.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/include/Source.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Source.cpp -o CMakeFiles/Lib.dir/include/Source.cpp.s
+CMakeFiles/Lib.dir/sources/Source.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/sources/Source.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp -o CMakeFiles/Lib.dir/sources/Source.cpp.s
 
-CMakeFiles/Lib.dir/include/Source.cpp.o.requires:
+CMakeFiles/Lib.dir/sources/Source.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lib.dir/include/Source.cpp.o.requires
+.PHONY : CMakeFiles/Lib.dir/sources/Source.cpp.o.requires
 
-CMakeFiles/Lib.dir/include/Source.cpp.o.provides: CMakeFiles/Lib.dir/include/Source.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/include/Source.cpp.o.provides.build
-.PHONY : CMakeFiles/Lib.dir/include/Source.cpp.o.provides
+CMakeFiles/Lib.dir/sources/Source.cpp.o.provides: CMakeFiles/Lib.dir/sources/Source.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.o.provides.build
+.PHONY : CMakeFiles/Lib.dir/sources/Source.cpp.o.provides
 
-CMakeFiles/Lib.dir/include/Source.cpp.o.provides.build: CMakeFiles/Lib.dir/include/Source.cpp.o
+CMakeFiles/Lib.dir/sources/Source.cpp.o.provides.build: CMakeFiles/Lib.dir/sources/Source.cpp.o
 
 
 # Object files for target Lib
 Lib_OBJECTS = \
-"CMakeFiles/Lib.dir/include/Source.cpp.o"
+"CMakeFiles/Lib.dir/sources/Source.cpp.o"
 
 # External object files for target Lib
 Lib_EXTERNAL_OBJECTS =
 
-libLib.a: CMakeFiles/Lib.dir/include/Source.cpp.o
+libLib.a: CMakeFiles/Lib.dir/sources/Source.cpp.o
 libLib.a: CMakeFiles/Lib.dir/build.make
 libLib.a: CMakeFiles/Lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLib.a"
@@ -100,7 +100,7 @@ CMakeFiles/Lib.dir/build: libLib.a
 
 .PHONY : CMakeFiles/Lib.dir/build
 
-CMakeFiles/Lib.dir/requires: CMakeFiles/Lib.dir/include/Source.cpp.o.requires
+CMakeFiles/Lib.dir/requires: CMakeFiles/Lib.dir/sources/Source.cpp.o.requires
 
 .PHONY : CMakeFiles/Lib.dir/requires
 
