@@ -4,6 +4,7 @@ language: cpp
 
 compiler:
   -gcc
+  -g++
 
 before_install:
   - pip install --user cpp-coveralls
