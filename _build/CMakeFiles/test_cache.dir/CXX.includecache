@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Header.h
+iostream
+-
+cmath
+-
+string
+-
+random
+-
+chrono
+-
+algorithm
+-
+
+../include/Source.cpp
+Header.h
+../include/Header.h
+
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp
+Header.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/Header.h
+Source.cpp
+-
+
