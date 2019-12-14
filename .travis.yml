@@ -14,7 +14,7 @@ install:
   - cmake --build _build
 
 script:
-  - ctest -V
+  - ./main
 
 addons:
   apt:
