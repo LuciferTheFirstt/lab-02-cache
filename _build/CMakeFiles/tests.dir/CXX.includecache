@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-../include/Header.h
+../include/header.h
 iostream
--
-cmath
 -
 string
 -
-random
--
 chrono
 -
-algorithm
+cmath
 -
 
 /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp
-Header.h
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/Header.h
+header.h
+-
+iostream
+-
+string
+-
+chrono
+-
+cmath
+-
 

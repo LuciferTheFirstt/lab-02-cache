@@ -90,7 +90,6 @@ test_cache_EXTERNAL_OBJECTS =
 
 test_cache: CMakeFiles/test_cache.dir/main.cpp.o
 test_cache: CMakeFiles/test_cache.dir/build.make
-test_cache: libLib.a
 test_cache: CMakeFiles/test_cache.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_cache"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_cache.dir/link.txt --verbose=$(VERBOSE)

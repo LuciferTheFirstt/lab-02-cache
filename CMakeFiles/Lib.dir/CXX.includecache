@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp
-Header.h
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Header.h
-
-include/Header.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Header.h
 iostream
 -
 cmath
@@ -23,4 +19,8 @@ chrono
 -
 algorithm
 -
+
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Source.cpp
+Header.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/include/Header.h
 

@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/tests.dir/sources/Source.cpp.o  -o tests 
+/usr/bin/c++    -rdynamic CMakeFiles/tests.dir/main.cpp.o  -o tests 

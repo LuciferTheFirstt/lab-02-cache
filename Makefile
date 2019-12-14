@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -88,6 +77,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -120,19 +120,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Lib
-
-# Build rule for target.
-Lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lib
-.PHONY : Lib
-
-# fast build rule for target.
-Lib/fast:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/build
-.PHONY : Lib/fast
 
 #=============================================================================
 # Target rules for targets named test_cache
@@ -174,33 +161,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sources/Source.o: sources/Source.cpp.o
-
-.PHONY : sources/Source.o
-
-# target to build an object file
-sources/Source.cpp.o:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.o
-.PHONY : sources/Source.cpp.o
-
-sources/Source.i: sources/Source.cpp.i
-
-.PHONY : sources/Source.i
-
-# target to preprocess a source file
-sources/Source.cpp.i:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.i
-.PHONY : sources/Source.cpp.i
-
-sources/Source.s: sources/Source.cpp.s
-
-.PHONY : sources/Source.s
-
-# target to generate assembly for a file
-sources/Source.cpp.s:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/sources/Source.cpp.s
-.PHONY : sources/Source.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -208,16 +168,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... Lib"
 	@echo "... edit_cache"
 	@echo "... test_cache"
+	@echo "... test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sources/Source.o"
-	@echo "... sources/Source.i"
-	@echo "... sources/Source.s"
 .PHONY : help
 
 

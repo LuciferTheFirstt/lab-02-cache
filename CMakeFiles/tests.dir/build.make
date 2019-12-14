@@ -57,38 +57,38 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/sources/Source.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/sources/Source.cpp.o: sources/Source.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/sources/Source.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/sources/Source.cpp.o -c /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp
+CMakeFiles/tests.dir/main.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/main.cpp.o: main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/main.cpp.o -c /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp
 
-CMakeFiles/tests.dir/sources/Source.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/sources/Source.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp > CMakeFiles/tests.dir/sources/Source.cpp.i
+CMakeFiles/tests.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp > CMakeFiles/tests.dir/main.cpp.i
 
-CMakeFiles/tests.dir/sources/Source.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/sources/Source.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp -o CMakeFiles/tests.dir/sources/Source.cpp.s
+CMakeFiles/tests.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp -o CMakeFiles/tests.dir/main.cpp.s
 
-CMakeFiles/tests.dir/sources/Source.cpp.o.requires:
+CMakeFiles/tests.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/tests.dir/sources/Source.cpp.o.requires
+.PHONY : CMakeFiles/tests.dir/main.cpp.o.requires
 
-CMakeFiles/tests.dir/sources/Source.cpp.o.provides: CMakeFiles/tests.dir/sources/Source.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/Source.cpp.o.provides.build
-.PHONY : CMakeFiles/tests.dir/sources/Source.cpp.o.provides
+CMakeFiles/tests.dir/main.cpp.o.provides: CMakeFiles/tests.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/tests.dir/main.cpp.o.provides
 
-CMakeFiles/tests.dir/sources/Source.cpp.o.provides.build: CMakeFiles/tests.dir/sources/Source.cpp.o
+CMakeFiles/tests.dir/main.cpp.o.provides.build: CMakeFiles/tests.dir/main.cpp.o
 
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/sources/Source.cpp.o"
+"CMakeFiles/tests.dir/main.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/sources/Source.cpp.o
+tests: CMakeFiles/tests.dir/main.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"
@@ -99,7 +99,7 @@ CMakeFiles/tests.dir/build: tests
 
 .PHONY : CMakeFiles/tests.dir/build
 
-CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/sources/Source.cpp.o.requires
+CMakeFiles/tests.dir/requires: CMakeFiles/tests.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/tests.dir/requires
 

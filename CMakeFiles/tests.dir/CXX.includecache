@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Source.cpp
-Header.h
-/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/sources/Header.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/main.cpp
+Cache.h
+/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/Cache.h
 
-include/Header.h
+include/Cache.h
 iostream
 -
 cmath

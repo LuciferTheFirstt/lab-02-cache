@@ -60,50 +60,13 @@ CMAKE_SOURCE_DIR = /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/p
 CMAKE_BINARY_DIR = /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lib.dir
-
-# All Build rule for target.
-CMakeFiles/Lib.dir/all:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/depend
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=1,2 "Built target Lib"
-.PHONY : CMakeFiles/Lib.dir/all
-
-# Include target in all.
-all: CMakeFiles/Lib.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles 0
-.PHONY : CMakeFiles/Lib.dir/rule
-
-# Convenience name for target.
-Lib: CMakeFiles/Lib.dir/rule
-
-.PHONY : Lib
-
-# clean rule for target.
-CMakeFiles/Lib.dir/clean:
-	$(MAKE) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/clean
-.PHONY : CMakeFiles/Lib.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Lib.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/test_cache.dir
 
 # All Build rule for target.
-CMakeFiles/test_cache.dir/all: CMakeFiles/Lib.dir/all
+CMakeFiles/test_cache.dir/all:
 	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/depend
 	$(MAKE) -f CMakeFiles/test_cache.dir/build.make CMakeFiles/test_cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=3,4 "Built target test_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles --progress-num=1,2 "Built target test_cache"
 .PHONY : CMakeFiles/test_cache.dir/all
 
 # Include target in all.
@@ -113,7 +76,7 @@ all: CMakeFiles/test_cache.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_cache.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/luciferthefirstt/LuciferTheFirstt/workspace/workspace/projects/AL/lab02/CMakeFiles 0
 .PHONY : CMakeFiles/test_cache.dir/rule

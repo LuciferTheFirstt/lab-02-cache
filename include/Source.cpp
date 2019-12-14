@@ -18,7 +18,7 @@ void Cache::DirectWay(int n)
 for (int loop = 0; loop < LOOP; ++loop)
 {
 for (int i = 0; i < n; ++i)
-int v = buffer[i];
+ buffer[i];
 }
 }
 
@@ -27,22 +27,17 @@ void Cache::ReversWay(int n)
 for (int loop = 0; loop < LOOP; ++loop)
 {
 for (int i = n - 1; i >= 0; --i)
-int v = buffer[i];
+ buffer[i];
 }
 }
 
 void Cache::RandomWay(int n)
 {
-std::vector<int> v;
-
-for (int i = 0; i, n; ++i)
-v.push_back(buffer[i]);
-
-std::random_device rd;
-std::mt19937 g(rd());
-
 for (int loop = 0; loop < LOOP; ++loop)
-std::shuffle(v.begin(), v.end(), g);
+{
+for (int i = n - 1; i >= 0; --i)
+ buffer[rand() % n];
+}
 
 }
 
