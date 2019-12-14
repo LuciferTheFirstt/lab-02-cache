@@ -14,7 +14,7 @@ install:
   - cmake --build _build
 
 script:
-  - ./main
+  - ./main 
 
 addons:
   apt:
