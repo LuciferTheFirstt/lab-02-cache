@@ -13,7 +13,7 @@ int main()
 	max_kb = 8192;
 
 	Cache cache(min_kb, max_kb);
-	Cache::Experiment *direct = cache.MakeTest("direct");
+	Cache::Experiment *direct = cache.MakeTest("Direct");
 	Cache::Experiment *reverse = cache.MakeTest("reverse");
 	Cache::Experiment *random = cache.MakeTest("random");
 }

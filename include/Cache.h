@@ -145,7 +145,7 @@ Cache::Experiment* Cache::MakeTest( std::string travel )
 		{
 			RandomWay( n );
 		}
-		else std::cout<<"ERROR you entered an incorrect travel";
+		else throw std::invalid_argument("Invalid syntax.");
 
 		auto finish = std::chrono::high_resolution_clock::now();
 
