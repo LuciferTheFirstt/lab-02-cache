@@ -78,7 +78,7 @@ unsigned long long int Cache::KBtoSize( int kb )
 
 void Cache::DirectWay( int n )
 {
-	for( int loop = 0; loop < Num_loop; ++loop )
+	for(unsigned int loop = 0; loop < Num_loop; ++loop )
 	{
 		for( int i = 0; i < n; ++i )
 		{
@@ -90,7 +90,7 @@ void Cache::DirectWay( int n )
 
 void Cache::ReversWay( int n )
 {
-	for( int loop = 0; loop <Num_loop; ++loop )
+	for(unsigned int loop = 0; loop <Num_loop; ++loop )
 	{
 		for( int i = n - 1; i >= 0; --i )
 		{
@@ -107,7 +107,7 @@ void Cache::RandomWay( int n )
 	std::random_device rd;
 	std::mt19937 g( rd() );
 
-	for( int loop = 0; loop < Num_loop; ++loop )
+	for(unsigned int loop = 0; loop < Num_loop; ++loop )
 		std::shuffle( v.begin(), v.end(), g );
 
 }
@@ -141,11 +141,11 @@ Cache::Experiment* Cache::MakeTest( std::string travel )
 			ReversWay( n );
 		}
 
-		else {
-
+		else if( travel == "random")
+		{
 			RandomWay( n );
-
 		}
+		else std::cout<<"ERROR you entered an incorrect travel";
 
 		auto finish = std::chrono::high_resolution_clock::now();
 
