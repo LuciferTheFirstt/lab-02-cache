@@ -121,7 +121,7 @@ Cache::Experiment* Cache::MakeTest( std::string travel )
 	std::cout << "   experiments:" << std::endl;
 	for( int i = 0; i < size; i++ )
 	{
-
+		std::cout<<"i="<<i<<std::endl;
 		int n = KBtoSize( mas_sizes[i] );
 		initbuffer( n );
 
