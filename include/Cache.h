@@ -41,7 +41,7 @@ public:
 	Experiment* MakeTest( std::string travel );
 
 private:
-	int LOOP = 1000;
+	int Num_loop = 1000;
 	unsigned int* buffer;
 
 	int* mas_sizes;//массив размеров(память) 
@@ -53,7 +53,7 @@ private:
 	void ReversWay( int n );//обратный путь
 	void RandomWay( int n );//рандомный проход
 
-	int KBtoSize( int kb );
+	unsigned long long int KBtoSize( int kb );
 
 };
 
@@ -71,14 +71,14 @@ void Cache::releaseBuffer( )
 	delete[] buffer;
 }
 
-int Cache::KBtoSize( int kb )
+unsigned long long int Cache::KBtoSize( int kb )
 {
 	return kb * 1024 / sizeof( int );
 }
 
 void Cache::DirectWay( int n )
 {
-	for( int loop = 0; loop < LOOP; ++loop )
+	for( int loop = 0; loop < Num_loop; ++loop )
 	{
 		for( int i = 0; i < n; ++i )
 		{
@@ -90,7 +90,7 @@ void Cache::DirectWay( int n )
 
 void Cache::ReversWay( int n )
 {
-	for( int loop = 0; loop < LOOP; ++loop )
+	for( int loop = 0; loop <Num_loop; ++loop )
 	{
 		for( int i = n - 1; i >= 0; --i )
 		{
@@ -107,7 +107,7 @@ void Cache::RandomWay( int n )
 	std::random_device rd;
 	std::mt19937 g( rd() );
 
-	for( int loop = 0; loop < LOOP; ++loop )
+	for( int loop = 0; loop < Num_loop; ++loop )
 		std::shuffle( v.begin(), v.end(), g );
 
 }
@@ -161,7 +161,7 @@ Cache::Experiment* Cache::MakeTest( std::string travel )
 
 		//время
 		std::cout << "       results:" << std::endl;
-		std::cout << "         duration: " << ( std::chrono::duration_cast<std::chrono::milliseconds>( finish - start ).count() / LOOP ) << "ms" << std::endl;
+		std::cout << "         duration: " << ( std::chrono::duration_cast<std::chrono::milliseconds>( finish - start ).count() / Num_loop ) << "ms" << std::endl;
 
 	}
 
