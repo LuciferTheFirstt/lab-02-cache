@@ -81,3 +81,25 @@ investigation:                                       |  investigation:
 ```
 
 ⚠️ В отчет также необходимо добавить общий график с результатами всех исследований. ⚠️
+
+[Прямой проход](http://yotx.ru/#!1/3_qwiC/YP9rYODg4N9I4bwv7b/dL9/sH@w7yel1vY3tnZgvIPdjZ2zU97B7sbZ1g7vYHdj62AHxDvY3dg5AMF4W7sboIPLU97O7gZs63KHB9rd2NrZgcF4p7v7O/skGnZj55TxeLrFeNy6vNjd39rfBwU=)
+
+[Обратный проход](http://yotx.ru/#!1/3_qwiC/YP9rYODg4N9I4bwv7b/dL9/sH@w7yel1vY3tnZgvIPdjZ2zU97B7sbZ1g7vYHdj62AHxDvY3dg5AMF4W7sboIPLU97O7gZs63KHd7a7sbWzA4PxYLv7O/skGnZj63KL8bh1cMl43LnY2d3f2t8HBQ==)
+
+[Случайный проход](http://yotx.ru/#!1/3_qwiC/YP9rYODg4N9I4bwv7b/dL9/sH@w7yel1vY3tnZgvJ3djZ2zU97Z7sbZ1g5va2t3Y@tgB8TbAe1u7ByAYLyznd0N0MHlKW9rC7S7Adu63OHtwBC7G1s7OzAYD3R5ubu/s0@iYTe2YAjG4wHj8WB3f2t/HwM=)
+
+[Сравнение графиков](http://yotx.ru/#!1/3_qwiC/YP9rYODg4N9I4bwv7b/dL9/sH@w7yel1vY3tnZgvIPdjZ2zU97B7sbZ1g7vYHdj62AHxDvY3dg5AMF4W7sboIPLU97O7gZs63KHB9rd2NrZgcF4p7v7O/skGnZjC4ZgPB4wHg9297f29ze2dmC8g92NnbNT3sHuxtnWDu9gd2PrYAfEO9jd2DkAwXhbuxugg8tT3s7uBmzrcod3truxtbMDg/Fgu/s7@yQadmPnlPF4usV43Lq82N3f2t/f2NqB8XZ2N3bOTnlnuxtnWzu8ra3dja2DHRBvB7S7sXMAgvHOdnY3QAeXp7ytLdDuBmzrcoe3A0Psbmzt7MBgPNDl5e7@zj6Jht3YOWU8nm4xHrcuL3b3t/b3AQc=)
+
+### Таблица ###
+| Номер  | Размер буффера | Прямой(мс)| Обратный (мс) | Случайный (мс) |
+|--------|----------------|-----------|---------------|----------------|
+| 1      | 128            | 0         | 0             | 2              |
+| 2      | 256            | 0         | 0             | 5              |
+| 3      | 512            | 0         | 0             | 11             |
+| 4      | 1024           | 0         | 0             | 24             |
+| 5      | 2048           | 1         | 1             | 52             |
+| 6      | 4096           | 2         | 2             | 114            |
+| 7      | 8191           | 4         | 5             | 287            |
+| 8      | 8191           | 6         | 8             | 499            |
+
+
